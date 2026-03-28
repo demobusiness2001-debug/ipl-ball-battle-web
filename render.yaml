@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: ipl-ball-battle-server
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CRICKET_API_PROVIDER
+        value: cricbuzz
+      - key: MATCH_ID
+        value: ipl-demo
+      - key: MATCH_TITLE
+        value: RCB vs SRH
+      - key: MATCH_TEAMS
+        value: RCB,SRH
+      - key: PREDICTION_WINDOW_MS
+        value: 8000
+      - key: RESULT_PAUSE_MS
+        value: 1800
+    healthCheckPath: /api/health
