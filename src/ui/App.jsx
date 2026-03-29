@@ -454,12 +454,12 @@ export default function App() {
 
           <div className="teamLogos">
             <div className="teamBlock">
-              <img className="teamLogo rcbLogo" src="/rcb_logo-removebg-preview.png" alt="RCB" />
+              <img className="teamLogo rcbLogo" src="/rcb.png" alt="RCB" />
               <div className="liveDotSmall">● LIVE</div>
             </div>
             <div className="vsCenter">VS</div>
             <div className="teamBlock">
-              <img className="teamLogo srhLogo" src="/srh_logo-removebg-preview.png" alt="SRH" />
+              <img className="teamLogo srhLogo" src="/srh.png" alt="SRH" />
               <div className="liveDotSmall">● LIVE</div>
             </div>
           </div>
@@ -608,7 +608,7 @@ export default function App() {
               onClick={() => setPendingTeam('RCB')}
             >
               <div className="teamCardLogoWrapper rcbGradient">
-                <img src="/rcb_logo-removebg-preview.png" alt="RCB" className="teamCardLogo" />
+                <img src="/rcb.png" alt="RCB" className="teamCardLogo" />
               </div>
               <div className="teamCardInfo">
                 <div className="teamCardCode">RCB</div>
@@ -629,7 +629,7 @@ export default function App() {
               onClick={() => setPendingTeam('SRH')}
             >
               <div className="teamCardLogoWrapper srhGradient">
-                <img src="/srh_logo-removebg-preview.png" alt="SRH" className="teamCardLogo" />
+                <img src="/srh.png" alt="SRH" className="teamCardLogo" />
               </div>
               <div className="teamCardInfo">
                 <div className="teamCardCode">SRH</div>
@@ -692,7 +692,7 @@ export default function App() {
                 <span className="avatarIcon">👤</span>
                 {team && (
                   <img 
-                    src={team === 'RCB' ? '/rcb_logo-removebg-preview.png' : '/srh_logo-removebg-preview.png'} 
+                    src={team === 'RCB' ? '/rcb.png' : '/srh.png'} 
                     alt={team} 
                     className="playerTeamLogo" 
                   />
